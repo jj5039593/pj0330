@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 객체</title>
+    <link rel="stylesheet" href="css/common/reset.css">
+    <script src="js/event_obj.js" defer></script>
+    <style>
+        .event-parent{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .event-parent .event-con{
+            flex: 0 1 300px;
+            border: 1px solid;
+        }
+        .event-parent .event-con img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .event-parent .event-con p{
+            border: 1px solid;
+        }
+        .popup{
+            width: 0;
+            height: 0;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            /* display: none; */
+            opacity: 0;
+        }
+        .popup .pop-con{
+            flex: 0 1 400px;
+            height: auto;
+            position: absolute;
+            /* left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%); */
+            /* border: 1px solid #fff; */
+        }
+        .popup img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .pop-animation{
+            transition: all 0.5s;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="event-parent">
+        <div class="event-con">
+            <img src="img/a7.jpg" alt="a7">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+    </div>
+    <div class="popup">
+        <div class="pop-con">
+            <img src="" alt="">
+            <p></p>
+        </div>
+    </div>
+</body>
+</html>
